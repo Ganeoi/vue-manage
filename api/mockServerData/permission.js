@@ -1,9 +1,9 @@
-// 该文件 登录接口调用逻辑实现
+// 该文件 登录接口后台的调用逻辑实现
 import Mock from 'mockjs'
 export default {
   getMenu: config => {
     const { username, password } = JSON.parse(config.body)
-    // 判断账号和密码是否正确
+    // 对不同账号的权限管理实现
     if (username === 'admin' && password === 'admin') {
       return {
         code: 20000,

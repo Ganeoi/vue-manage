@@ -1,3 +1,4 @@
+// 登录权限的配置：token存储在该文件
 import Cookie from 'js-cookie'
 export default {
   state: {
