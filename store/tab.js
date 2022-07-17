@@ -45,7 +45,7 @@ export default {
     // 添加menu修改的相关方法
     setMenu(state, val) {
         state.menu = val,
-        // 将menu数据缓存在cookie中，避免刷新浏览器时丢失menu数据 ：JSON.stringify 对数据进行数列化
+        // 将menu数据缓存在cookie中，避免刷新浏览器时丢失menu数据(即仍然处于当前的页面中？？) ：JSON.stringify 对数据进行数列化
         Cookie.set('menu', JSON.stringify(val))
     },
     // 重置menu数据

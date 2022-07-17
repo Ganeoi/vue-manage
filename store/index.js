@@ -4,6 +4,7 @@ import Vuex from 'vuex'
 import tab from './tab'
 import user from './user'
 
+
 // 把vuex进行全局注入
 Vue.use(Vuex)
 
