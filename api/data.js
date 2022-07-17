@@ -53,3 +53,4 @@ export const getAfterSale = (params) => {
     method: 'get',
     params
   })
+}
