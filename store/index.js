@@ -3,10 +3,6 @@ import Vuex from 'vuex'
 // 引入两个自定义的模块
 import tab from './tab'
 import user from './user'
-import mall from './mall'
-import indent from './indent'
-import afterSale from './afterSale'
-
 
 // 把vuex进行全局注入
 Vue.use(Vuex)
@@ -18,8 +14,5 @@ export default new Vuex.Store({
   modules: {
     tab,
     user,
-    mall,
-    indent,
-    afterSale
   }
 })
