@@ -87,7 +87,7 @@ export default {
       tableData: [],
       // 定义一个对象，再对每一列的数据遍历 进行渲染展示
       tableLabel: {
-        name: '课程',
+        name: '类别',
         todayBuy: '今日购买',
         monthBuy: '本月购买',
         totalBuy: '总购买'
@@ -108,13 +108,13 @@ export default {
         },
         {
           name: "今日未支付订单",
-          value: 351,
+          value: 9,
           icon: "s-goods",
           color: "#5ab1ef",
         },
         {
           name: "本月支付订单",
-          value: 1234,
+          value: 1204,
           icon: "success",
           color: "#2ec7c9",
         },
@@ -126,7 +126,7 @@ export default {
         },
         {
           name: "本月未支付订单",
-          value: 1234,
+          value: 26,
           icon: "s-goods",
           color: "#5ab1ef",
         },
