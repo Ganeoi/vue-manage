@@ -26,7 +26,7 @@
       <span slot="title">{{ item.label }}</span>
     </el-menu-item>
     <!-- 对有子菜单的一级菜单进行遍历渲染展示 -->
-    <el-submenu v-for="item in hasChildren" :index="item.path" :key="item.path">
+    <el-submenu v-for="item in hasChildren" :index="item.path+''" :key="item.path">
       <template slot="title">
         <i :class="'el-icon-' + item.icon"></i>
         <span slot="title">{{ item.label }}</span>
@@ -36,7 +36,7 @@
         v-for="(subItem, subIndex) in item.children"
         :key="subItem.path"
       >
-        <el-menu-item @click="clickMenu(subItem)" :index="subIndex">{{
+        <el-menu-item @click="clickMenu(subItem)" :index="subIndex+''">{{
           subItem.label
         }}</el-menu-item>
       </el-menu-item-group>
