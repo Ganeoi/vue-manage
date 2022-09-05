@@ -6,7 +6,7 @@
       <!-- 使用面包屑组件 -->
       <el-breadcrumb separator="/" class="bcrumb">
         <!-- 对tags中的数据进行循环遍历 -->
-        <el-breadcrumb-item v-for="item in tags" key="item.path" :to="{ path: 'item.path' }">{{item.label}}</el-breadcrumb-item>
+        <el-breadcrumb-item v-for="item in tags" :key="item.path" :to="{ path: 'item.path' }">{{item.label}}</el-breadcrumb-item>
       </el-breadcrumb>
     </div>
     <div class="r-content">
